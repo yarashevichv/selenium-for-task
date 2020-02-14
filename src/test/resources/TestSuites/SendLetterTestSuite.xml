@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="LogOutTestSuite">
+
+	<test name="logOutSystem">
+		<parameter name="browser" value="chrome" />
+		<parameter name="email" value="111test.ivan@gmail.com" />
+		<parameter name="password" value="test_123" />
+		<parameter name="subject" value="Test Scenario 3" />
+		<parameter name="text" value="Text of letter" />
+		<parameter name="successResult" value="1" />
+
+		<groups>
+			<run>
+				<include name="Test scenario 3"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.google.mail.GmailTests"></class>
+		</classes>
+	</test>
+
+</suite>
